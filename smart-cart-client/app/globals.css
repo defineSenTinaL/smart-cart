@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.overflow-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* You can adjust this to control the number of lines before truncating */
+  overflow: hidden;
+}
+
+.title-single-line {
+  white-space: nowrap;
+  /* Keep the text on a single line */
+  overflow: hidden;
+  /* Hide text that goes beyond the element's width */
+  text-overflow: ellipsis;
+  /* Add ellipsis when text is truncated */
+  display: block;
+  /* Or inline-block, depending on your layout needs */
+}
+
+.auth-loading {
+  margin-top: 25rem;
+}
+
+/* Add this in your global CSS file */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  /* for IE and Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+}
